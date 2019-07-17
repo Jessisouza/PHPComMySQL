@@ -19,5 +19,5 @@
 </form>
 
 
-
+<?php include("listar_produtos.php"); ?>
 <?php include("rodape.php"); ?>

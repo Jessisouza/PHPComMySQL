@@ -1,10 +1,7 @@
 <?php include("cabecalho.php"); ?>
 <?php include("bd.php"); ?>
+<?php include("categoria_bd.php"); ?>
 <?php
-  function insereCategoria($conexao, $nome, $descricao){
-    $query = "insert into CATEGORIA (NOME, DESCRICAO) values ('{$nome}', '{$descricao}')";
-    return mysqli_query($conexao, $query);
-  }
 
   $nome = $_POST["nome"];
   $descricao = $_POST["descricao"];
