@@ -9,6 +9,7 @@ foreach($produtos as $produto) {
 <tr>
   <td><?= $produto ['NOME']?></td>
   <td><?=$produto ['PRECO']?></td>
+  <td><a href="remove_produto.php?id=<?=$produto['id'] ?>" class= "text-danger" >Remover</a> </td> 
  </tr>
 <?php
 }

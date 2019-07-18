@@ -15,4 +15,9 @@ function ListaProdutos ($conexao){
    $resultadoDoInsere = mysqli_query($conexao, $query);
    return $resultadoDoInsere;
  }
+
+ function apagarProduto($conexao,$id){
+    $query ="DELETE FROM PRODUTO WHERE ID= {$id}";
+  return mysqli_query($conexao,$query);
+ }
 ?>

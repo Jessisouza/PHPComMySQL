@@ -1,6 +1,7 @@
 <?php include("cabecalho.php"); ?>
 <?php include("bd.PHP"); ?>
 <?php include("categoria_bd.PHP"); ?>
+<?php include("produto_bd.PHP"); ?>
   <table class ="table">
   <?php
   $categorias = ListaCategoria($conexao);
