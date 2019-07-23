@@ -31,7 +31,7 @@ if(isset($_GET['alterou'])){
   $descricaoCadastrada = $_GET['descricao'];
 
   if($cadastrou){
-    echo "<p class='text-success'> A categoria $nomeCadastrado, no valor $descricaoCadastrado foi atualizada!</p>";
+    echo "<p class='text-success'> A categoria $nomeCadastrado, no valor $descricaoCadastrada foi atualizada!</p>";
   } else {
     echo "<p class='alert-danger'> Ocorreu um problema ao atualizar a categoria.</p>";
   }
@@ -43,7 +43,7 @@ if(isset($_GET['id'])){
   ?>
   <form action="/salva_categoria.php" method="post">
     <table class="table">
-      <input type="hidden" value="<?= $categoriaAlteracao['id'] ?>" name="id"/>
+      <input type="hidden" value="<?= $categoriaAlteracao['ID'] ?>" name="id"/>
       <tr>
         <td>Nome:</td>
         <td><input type="text" name="nome" value="<?= $categoriaAlteracao['NOME']?>"/></td>

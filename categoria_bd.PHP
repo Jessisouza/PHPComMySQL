@@ -35,7 +35,7 @@ return $categorias;
       }
 
       function alteraCategoria($conexao, $nome, $descricao, $id){
-        $query = "UPDATE CATEGORIA SET NOME = '{$nome}', DESCRICAO = {$descricao} WHERE id = {$id}";
+        $query = "UPDATE CATEGORIA SET NOME = '{$nome}', DESCRICAO = '{$descricao}' WHERE ID = {$id}";
         return mysqli_query($conexao, $query);
       }
 
