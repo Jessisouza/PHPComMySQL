@@ -1,14 +1,15 @@
 <?php include("cabecalho.php"); ?>
-<?php include("bd.PHP"); ?>
-<?php include("produto_bd.PHP"); ?>
+<?php include("bd.php"); ?>
+<?php include("produto_bd.php"); ?>
 <?php
-$id =$_GET["id"];
 
+$id = $_GET["id"];
 
-if (apagarProduto($conexao,$id)){
-    header ("location: cadastro_produto.php?removeu=true");
-}  else{
-  header ("location: cadastro_produto.php?removeu=false");
-  }
+if(apagaProduto($conexao, $id)){
+  header("Location: cadastro_produto.php?removeu=true");
+} else {
+  header("Location: cadastro_produto.php?removeu=false");
+}
+
 ?>
 <?php include("rodape.php"); ?>
